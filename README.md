@@ -6,9 +6,13 @@
 - in beginner.php add your vpn-key deliver way (search //hier wird nach community unterschieden)
 
 
+---
+
+
 #### Creator
 
-Gluon Firmware Downloader was created by and is maintained by **Philhil**
+Freifunk Installer was created by and is maintained by Freifunk Stuttgart and **Philhil**
+For any questions contact
 * https://twitter.com/philhil
 * https://github.com/philhil
 

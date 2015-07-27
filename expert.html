@@ -1,0 +1,191 @@
+<!-- jQuery -->
+<script src="js/jquery.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<script src="js/jquery-ui.min.js"></script>
+
+<!-- choosen -->
+<link rel="stylesheet" href="css/chosen.min.css">
+<script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+
+<!-- pNotify -->
+<link rel="stylesheet" href="css/pnotify.custom.min.css">
+<script src="js/pnotify.custom.min.js" type="text/javascript"></script>
+
+<div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="row col-lg-12">
+    		<img src="https://wiki.freifunk-stuttgart.net/_media/infomaterial:logo:ffslogo128.png" id="logo" height="128">
+		</div>
+		
+    	<div class="row">
+			<form id="radioPresys" class="col-lg-6 col-md-offset-3">
+			    <input type="radio" id="factory" name="radioPresys" checked="checked"><label for="factory">factory</label>
+			    <input type="radio" id="sysupgrade" name="radioPresys"><label for="sysupgrade">sysupgrade</label>
+			</form>
+		</div>
+		
+    	<div class="row">
+    		<p class="col-lg-6 col-md-offset-3">
+	    		<select data-placeholder="Choose a modell..." class="chosen-select" id="expert_devices" style="width:350px;" tabindex="1">
+	    			<option></option>
+	        	</select>
+	        </p>
+		</div>
+    			
+		<div class="row">
+			<p class="col-lg-6 col-md-offset-3">
+				<select data-placeholder="Choose a version..." class="chosen-select" id="expert_version" style="width:100px;" tabindex="2">
+	        	</select>
+			</p>
+		</div>
+		
+		<div class="row">
+			<p class="col-lg-6 col-md-offset-3">
+				<select data-placeholder="Choose a branch..." class="chosen-select" id="expert_branch" style="width:350px;" tabindex="3">
+	        	</select>
+			</p>
+		</div>
+		
+		<div class="row col-lg-12">
+			<button type="button" class="btn btn-default glyphicon glyphicon-download-alt" id="expert_download"> Download </button>
+		</div>
+    </div>
+</div>
+
+    
+
+<script>
+
+var CommunityData = null;
+
+function FillModell(community) {
+	if(typeof(community) != "undefined")
+	{
+		$.getJSON( "json/getjson.php?echo=true&community=" + community, function( data ) {
+		  	CommunityData = data;
+			
+			$.each(CommunityData, function(vendor, models) 
+			{
+				$.each( models, function(model)
+				{
+					$('#expert_devices').append($("<option/>").attr("vendor",vendor).attr("model",model).text(vendor + " " +model));
+				});
+			});
+			$('#expert_devices').trigger("chosen:updated");
+		});
+	}
+	else
+	{
+		new PNotify({
+				title: "Fehler",
+				text: "Es wurde eine nicht gültige Community ausgewählt",
+				type: 'error'
+		});
+	}
+}
+
+function FillVersion(chosen_vendor, chosen_modell) {
+	$("#expert_version").empty();
+	$('#expert_version').trigger("chosen:updated");
+	
+	if(typeof(CommunityData) != "undefined" && typeof(chosen_vendor) != "undefined" && typeof(chosen_modell) != "undefined")
+	{
+		$.each( CommunityData[chosen_vendor][chosen_modell], function(version)
+		{
+			$('#expert_version').append($("<option/>").text(version));
+		});
+		
+		$('#expert_version').trigger("chosen:updated");
+		
+		FillBranch(chosen_vendor, chosen_modell, $( "#expert_version" ).val())
+	}
+}
+
+function FillBranch(chosen_vendor, chosen_modell, chosen_version) {
+	$("#expert_branch").empty();
+	$('#expert_branch').trigger("chosen:updated");
+	
+	if(typeof(CommunityData) != "undefined" && typeof(chosen_vendor) != "undefined" 
+	&& typeof(chosen_modell) != "undefined" && typeof(chosen_version) != "undefined")
+	{
+		$.each( CommunityData[chosen_vendor][chosen_modell][chosen_version][$('input[name=radioPresys]:checked', '#radioPresys').attr('id')], function(branch)
+		{
+			$('#expert_branch').append($("<option/>").text(branch));	
+		});
+		
+		$('#expert_branch').trigger("chosen:updated");
+
+		setDownload();
+	}
+}
+
+function setDownload() {
+	$('#expert_download').attr('link', null);
+	
+	var chosen_vendor = $( "#expert_devices option:selected" ).attr('vendor');
+	var chosen_modell = $( "#expert_devices option:selected" ).attr('model');
+	var chosen_version = $( "#expert_version" ).val();
+	var presys = $('input[name=radioPresys]:checked', '#radioPresys').attr('id');
+	var chosen_branch = $( "#expert_branch" ).val();
+	
+	if(typeof(CommunityData) != "undefined" && typeof(chosen_vendor) != "undefined" 
+	&& typeof(chosen_modell) != "undefined" && typeof(chosen_version) != "undefined"
+	&& typeof(presys) != "undefined")
+	{
+		$('#expert_download').attr('link', CommunityData[chosen_vendor][chosen_modell][chosen_version][presys][chosen_branch]);
+	}
+}
+
+$(document).ready(function()
+{	
+	$('#expert_devices, #expert_version, #expert_branch').chosen({
+	    no_results_text: "Oops, nothing found!",
+	    width: "50%"
+	}); 
+	
+	$( "#radioPresys" ).buttonset();
+	 
+	$('#expert_devices').on('change', function(evt, params) {
+		var vendor = $( "#expert_devices option:selected" ).attr('vendor');
+		var model = $( "#expert_devices option:selected" ).attr('model');
+		FillVersion(typeof(vendor)=="undefined" ? null : vendor, typeof(model)=="undefined" ? null : model);
+	});
+	
+	$('#expert_version').on('change', function(evt, params) {
+		var vendor = $( "#expert_devices option:selected" ).attr('vendor');
+		var model = $( "#expert_devices option:selected" ).attr('model');
+		
+		FillBranch(typeof(vendor)=="undefined" ? null : vendor, 
+					typeof(model)=="undefined" ? null : model, 
+					typeof(params)=="undefined" || typeof(params['selected'])=="undefined" ? null : params['selected']);
+	});
+	
+	$('#expert_branch').on('change', function(evt, params) { setDownload(); });
+	
+	$('#expert_download').on('click', function() {
+		console.log("A");
+		if(typeof($('#expert_download').attr('link')) != "undefined")
+		{
+	   		window.location.href = $('#expert_download').attr('link');
+	  	}
+	  	else
+	  	{
+	  		new PNotify({
+				title: "Fehler",
+				text: "Bitte alle Felder füllen",
+				type: 'error'
+			});
+	  	}
+	});
+	
+	FillModell(typeof($('#community').val())=="undefined" ? null : $('#community').val());
+});
+</script>
+
