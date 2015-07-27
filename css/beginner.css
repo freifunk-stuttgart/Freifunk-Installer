@@ -192,188 +192,162 @@ h4 {
     margin: 0 auto;
 }
 
-/*
-.modell-WR84N-V1 {
-    background-image:url('http://i.istockimg.com/file_thumbview_approve/40670750/6/stock-illustration-40670750-wlan-router-drawing.jpg');
-}*/
-.modell-WZR-HP-AG300H-WZR-600DHP-ALLE{
-    background-image: url('../img/router/WZR-HP-AG300H-WZR-600DHP/router.jpg');
-}
-.modell-WZR-HP-G450H-ALLE{
-    background-image: url('../img/router/WZR-HP-G450H-ALLE/wzr-hp-g450h_o1.jpg');
-}
-.modell-DIR-825-REV-B1-ALLE{
-    background-image: url('../img/router/DIR-825-REV-B1-ALLE/DIR%20825%20Front.png');
-}
 .modell-CPE210-V10-ALLE{
-    background-image: url('../img/router/CPE210-V10-ALLE/TP_LINK_CPE210.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_CPE210.jpg');
 }
 .modell-CPE220-V10-ALLE{
-   /* background-image: url('../img/router/');*/
+   /* background-image: url('../img/router/TP-LINK');*/
 }
-
 .modell-CPE510-V10-ALLE{
-    background-image: url('../img/router/CPE510-V10-ALLE/router2.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_CPE510.jpg');
 }
 .modell-CPE520-V10-ALLE{
-    background-image: url('../img/router/CPE520-V10-ALLE/router.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_CPE520.jpg');
 }
 .modell-MR3020-V1{
-    background-image: url('../img/router/MR3020/TL-MR3020-V1.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-MR3020.jpg');
 }
 .modell-MR3040-V1{
-    background-image: url('../img/router/MR3040/TL-MR3040.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-MR3040.jpg');
 }
 .modell-MR3040-V2{
-    background-image: url('../img/router/MR3040/TL-MR3040.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-MR3040.jpg');
 }
 .modell-MR3220-V1{
-    background-image: url('../img/router/MR3220-V1/router.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-MR3220.jpg');
 }
 .modell-MR3420-V1{
-    background-image: url('../img/router/MR3420-V1/tp-link_tl-mr3220_front.jpg');
+    /*background-image: url('../img/router/TP-LINK');*/
 }
 .modell-MR3420-V2{
-    background-image: url('../img/router/MR3420-V2/TL-MR3220_2.0-02.jpg');
+    /*background-image: url('../img/router/TP-LINK');*/
 }
 .modell-WA750RE-V1{
-    background-image: url('../img/router/WA750RE-V1/TL-WA750RE.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WA750RE.jpg');
 }
-.modell-WA80N-V2{
-    background-image: url('../img/router/WA801ND-V2/TL-WA801ND_2.0.jpg');
+.modell-WA801N-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WA801ND_2.0.jpg');
 }
-.modell-WA80ND-V2{
-    background-image: url('../img/router/WA801ND-V2/TL-WA801ND_2.0.jpg');
+.modell-WA801ND-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WA801ND_2.0.jpg');
 }
 .modell-WA850RE-V1{
-    background-image: url('../img/router/WA850RE-V1/TL-WA850RE_1.0.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WA850RE_1.0.jpg');
 }
 .modell-WA90N-V2{
-    background-image: url('../img/router/WA901ND-V2/TL-WA901ND1.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WA901ND.jpg');
 }
 .modell-WA90ND-V2{
-    background-image: url('../img/router/WA901ND-V2/TL-WA901ND1.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WA901ND.jpg');
 }
 .modell-WDR3500-V1{
-    background-image: url('../img/router/WDR3500-V1/TL-WDR3500_1.0-P1.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WDR3500_1.0.jpg');
 }
 .modell-WDR3600-V1{
-    background-image: url('../img/router/WDR3600-V1/TL-WDR3600-UN-V1-P1.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WDR3600_1.0.jpg');
 }
 .modell-WDR4300-V1{
-    background-image: url('../img/router/WDR4300-V1/TL-WDR4300-01-web.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WDR4300_1.0.jpg');
 }
-.modell-WR104N-V1{
-    background-image: url('../img/router/WR1043N-V1/image775_3ec9f.jpg');
+.modell-WR1043N-V1{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR1043ND_1.0.jpg');
 }
-.modell-WR104N-V2{
-    background-image: url('../img/router/WR1043ND-V2/5-1043-v2.jpg');
+.modell-WR1043N-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR1043ND_2.0.jpg');
 }
-.modell-WR104ND-V1{
-    background-image: url('../img/router/WR1043ND-V1/TL-WR1043ND.jpg');
+.modell-WR1043ND-V1{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR1043ND_1.0.jpg');
 }
-.modell-WR104ND-V2{
-    background-image: url('../img/router/WR1043ND-V2/5-1043-v2.jpg');
+.modell-WR1043ND-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR1043ND_2.0.jpg');
 }
 .modell-WR703N-V1{
-    background-image: url('../img/router/WR703N-V1/tl-wr703n.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR703N.jpg');
 }
 .modell-WR710N-V1{
-    background-image: url('../img/router/WR710N-V1/TL-WR710N(EU)1.0_15.jpg');
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR710N(EU)1.0.jpg');
 }
-.modell-WR74N-V1{
-    background-image: url('../img/router/WR740N/TL-WR740N-05.jpg');
+.modell-WR740N-V1{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR740N.jpg');
 }
-.modell-WR74N-V2{
-    background-image: url('../img/router/WR740N/TL-WR740N-05.jpg');
+.modell-WR740N-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR740N.jpg');
 }
-.modell-WR74N-V3{
-    background-image: url('../img/router/WR740N/TL-WR740N-05.jpg');
+.modell-WR740N-V3{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR740N.jpg');
 }
-.modell-WR74N-V4{
-    background-image: url('../img/router/WR740N/TL-WR740N-05.jpg');
+.modell-WR740N-V4{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR740N.jpg');
 }
-.modell-WR74ND-V1{
-    background-image: url('../img/router/WR741ND/TL-WR741ND-05.jpg');
+.modell-WR741ND-V1{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR741ND.jpg');
 }
-.modell-WR74ND-V2{
-    background-image: url('../img/router/WR741ND/TL-WR741ND-05.jpg');
+.modell-WR741ND-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR741ND.jpg');
 }
-.modell-WR74ND-V3{
-    background-image: url('../img/router/WR741ND/TL-WR741ND-05.jpg');
+.modell-WR741ND-V3{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR741ND.jpg');
 }
-.modell-WR74ND-V4{
-    background-image: url('../img/router/WR741ND/TL-WR741ND-05.jpg');
+.modell-WR741ND-V4{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR741ND.jpg');
 }
-.modell-WR84N-V1{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V1{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84N-V2{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84N-V3{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V3{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84N-V5{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V5{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84N-V7{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V7{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84N-V8{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V8{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84N-V9{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841N-V9{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V1{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V1{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V2{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V3{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V3{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V5{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V5{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V7{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V7{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V8{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V8{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR84ND-V9{
-    background-image: url('../img/router/WR841N/841N-1280_6).jpg');
+.modell-WR841ND-V9{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TP-WR841N.jpg');
 }
-.modell-WR94N-V2{
-    background-image: url('../img/router/WR941ND/TL-WR941ND(UN_6.0-02-1280.jpg');
+.modell-WR941N-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR941ND.jpg');
 }
-.modell-WR94N-V3{
-    background-image: url('../img/router/WR941ND/TL-WR941ND(UN_6.0-02-1280.jpg');
+.modell-WR941N-V3{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR941ND.jpg');
 }
-.modell-WR94N-V4{
-    background-image: url('../img/router/WR941ND/TL-WR941ND(UN_6.0-02-1280.jpg');
+.modell-WR941N-V4{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR941ND.jpg');
 }
-.modell-WR94ND-V2{
-    background-image: url('../img/router/WR941ND/TL-WR941ND(UN_6.0-02-1280.jpg');
+.modell-WR941ND-V2{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR941ND.jpg');
 }
-.modell-WR94ND-V3{
-    background-image: url('../img/router/WR941ND/TL-WR941ND(UN_6.0-02-1280.jpg');
+.modell-WR941ND-V3{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR941ND.jpg');
 }
-.modell-WR94ND-V4{
-    background-image: url('../img/router/WR941ND/TL-WR941ND(UN_6.0-02-1280.jpg');
-}
-.modell-BULLET-M-ALLE{
-    background-image: url('../img/router/BULLET-M-ALLE/press_bullet.jpg');
-}
-.modell-NANOSTATION-M-ALLE{
-    background-image: url('../img/router/NANOSTATION-M-ALLE/ns-m5-01.jpg');
-}
-.modell-UNIFI-ALLE{
-    background-image: url('../img/router/UNIFI-ALLE/ubiquiti_uap_1-461x461.jpg');
-}
-.modell-UNIFIAP-OUTDOOR-ALLE{
-    background-image: url('../img/router/UNIFIAP-OUTDOOR-ALLE/router.jpg');
+.modell-WR941ND-V4{
+    background-image: url('../img/router/TP-LINK/TP_LINK_TL-WR941ND.jpg');
 }
